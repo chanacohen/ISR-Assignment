@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ISR Maps</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<script type="text/javascript" src="./Data/CitiesData.js"></script>
+	<script type="text/javascript" src="./Data/CitiesMapCords.js"></script>
+	
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+	
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	
+
+<div class="list_wrapper">
+	<div class="view_main">
+		<div class="view_wrap list-view" style="display: block;">
+			<div id='citiesGenerator'></div>
+		</div>
+	</div>
+</div>
+
+
+<div class="map_wrapper">
+	<div id="jerusalem_map" style="width: 800px; height: 600px;"></div>
+	<div id="london_map" style="width: 800px; height: 600px;"></div>
+	<div id="new_york_map" style="width: 800px; height: 600px;"></div>
+	<div id="sydney_map" style="width: 800px; height: 600px;"></div>
+</div>
+
+
+<script src="scripts.js"></script>
+<script src="./Map Generators/jerusalem_map_generator.js"></script>
+<script src="./Map Generators/london_map_generator.js"></script>
+<script src="./Map Generators/new_york_map_generator.js"></script>
+<script src="./Map Generators/sydney_map_generator.js"></script>
+
+
+</body>
+</html>
